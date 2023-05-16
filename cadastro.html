@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dent Lab - Login</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://kit.fontawesome.com/6cde816448.js" crossorigin="anonymous"></script>
+
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="./js/firebase-config.js"></script>
+    <script src="./js/register.js" defer></script>
+
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <ul class="logo">
+                <li><img id="logo__image"src="./imagens/logo.svg" alt="logo"></li>
+                <li><h1 class="titulo__Logo"> Dent<span>Lab </span></h1></li>
+            </ul>
+        </a>
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a class="login" href="login.html">LOGIN</a></li>
+        </ul>
+    </nav>
+    <section class="are__formulario">
+            <img class="img__login" src="./imagens/dentist-clinic.svg" alt="Dent Lsb">
+        <aside>
+            <form action="">
+                <h2 class="titulo__form">Olá 👋, tudo bem?</h2>
+                <p class="texto__form">Cadastre-se com seu e-mail e senha no nosso sistema.</p>
+                <label class="texto" for="email">E-mail:</label>
+                <input id="email" type="email" placeholder="E-mail" required>
+                <label class="texto" for="password">Senha:</label>
+                <input id="passsword" type="password" placeholder="Senha" required>
+                <label class="texto" for="password">Confirmar senha:</label>
+                <input  id="confirmPassword" type="password" placeholder="Senha" required>
+                <button id="registerButton">CADASTRAR-SE</button>
+            </form>
+        </aside>
+    </section>
+</body>
+</html>
